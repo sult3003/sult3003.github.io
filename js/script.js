@@ -34,6 +34,7 @@ $('form').submit(function(e){
         data: $(this).serialize()
     }).done(function(){
         $(this).find("input").val("");
+        $(this).find("textarea").val("");
         $('.overlay,#thanks').fadeIn();
         $('form').trigger('reset');
     });
